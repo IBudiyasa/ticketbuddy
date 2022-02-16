@@ -14,13 +14,13 @@
         <p class="header-text">"Your Buddy for your Ticket needs"</p>
         <div class="navbar">
             <ul>
-                <a href="#" id="tbus">Lorem ipsum dolor sit amet.</a>
+                <a href="#" id="add" onclick="">Tambah Ticket</a>
             </ul>
             <ul>
-                <a href="#" id="tkai">Lorem ipsum dolor sit amet.</a>
+                <a href="#" id="edit">Ubah Ticket</a>
             </ul>
             <ul>
-                <a href="#" id="tpsw">Lorem ipsum dolor sit amet.</a>
+                <a href="#" id="delete">Hapus Ticket</a>
             </ul>
         </div>
     </header><br>

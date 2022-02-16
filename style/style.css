@@ -81,7 +81,8 @@ body {
 .navbar ul a {
   display: block;
   text-decoration: none;
-  background-color: white;
+  font-size: 24px;
+  color: black;
   border: none;
 }
 .navbar ul a:hover {
