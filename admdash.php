@@ -11,6 +11,7 @@
     <header class="header">
         <h1 class="header-title">Ticket Buddy</h1>
         <hr class="ruler"/>
+        
         <p class="header-text">"Your Buddy for your Ticket needs"</p>
         <div class="navbar">
             <ul>

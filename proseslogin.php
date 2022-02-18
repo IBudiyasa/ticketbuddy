@@ -20,7 +20,7 @@
         }
         else{
             echo "<script>
-                    location.href = 'dashboard.php';
+                    location.href = 'dashboard/';
                 </script>";
         }
     }
