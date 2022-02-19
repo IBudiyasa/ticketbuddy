@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 12, 2022 at 04:48 AM
--- Server version: 10.4.19-MariaDB
--- PHP Version: 8.0.6
+-- Generation Time: Feb 19, 2022 at 12:53 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -26,17 +26,43 @@ USE `dbtiket`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbtiket`
+-- Table structure for table `tbbus`
 --
 
-CREATE TABLE `tbtiket` (
+CREATE TABLE `tbbus` (
   `idtiket` int(11) NOT NULL,
   `namatransport` varchar(50) NOT NULL,
-  `jenistransport` varchar(20) NOT NULL,
   `tglberangkat` date NOT NULL,
   `tujuan` varchar(50) NOT NULL,
-  `tempatawal` varchar(50) NOT NULL,
-  `jenistiket` varchar(20) NOT NULL
+  `tempatawal` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbkri`
+--
+
+CREATE TABLE `tbkri` (
+  `idtiket` int(11) NOT NULL,
+  `stasiun` varchar(50) NOT NULL,
+  `tujuan` varchar(50) NOT NULL,
+  `waktu` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbpesawat`
+--
+
+CREATE TABLE `tbpesawat` (
+  `idtiket` int(11) NOT NULL,
+  `namapesawat` varchar(50) NOT NULL,
+  `tujuan` varchar(50) NOT NULL,
+  `bandara` varchar(50) NOT NULL,
+  `waktu` varchar(5) NOT NULL,
+  `tglberangkat` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -66,9 +92,21 @@ INSERT INTO `tbuser` (`id`, `username`, `password`, `namalengkap`, `tgllahir`) V
 --
 
 --
--- Indexes for table `tbtiket`
+-- Indexes for table `tbbus`
 --
-ALTER TABLE `tbtiket`
+ALTER TABLE `tbbus`
+  ADD PRIMARY KEY (`idtiket`);
+
+--
+-- Indexes for table `tbkri`
+--
+ALTER TABLE `tbkri`
+  ADD PRIMARY KEY (`idtiket`);
+
+--
+-- Indexes for table `tbpesawat`
+--
+ALTER TABLE `tbpesawat`
   ADD PRIMARY KEY (`idtiket`);
 
 --
@@ -82,9 +120,21 @@ ALTER TABLE `tbuser`
 --
 
 --
--- AUTO_INCREMENT for table `tbtiket`
+-- AUTO_INCREMENT for table `tbbus`
 --
-ALTER TABLE `tbtiket`
+ALTER TABLE `tbbus`
+  MODIFY `idtiket` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tbkri`
+--
+ALTER TABLE `tbkri`
+  MODIFY `idtiket` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tbpesawat`
+--
+ALTER TABLE `tbpesawat`
   MODIFY `idtiket` int(11) NOT NULL AUTO_INCREMENT;
 
 --

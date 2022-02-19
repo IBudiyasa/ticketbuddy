@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style/style.css">
-    <title>Dashboard</title>
+    <title>Admin Dashboard</title>
 </head>
 <body>
     <header class="header">
         <h1 class="header-title">Ticket Buddy</h1>
         <hr class="ruler"/>
-        
+        <div class="user">
+
+        </div>
         <p class="header-text">"Your Buddy for your Ticket needs"</p>
         <div class="navbar">
             <ul>
