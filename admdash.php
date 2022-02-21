@@ -27,6 +27,9 @@
             </ul>
         </div>
     </header><br>
+    <footer class="footer">
+            <p class="footer-text">&copy 2022 I Gede Budiyasa</p>
+    </footer>
     <script src="script/myscript.js"></script>
 </body>
 </html>

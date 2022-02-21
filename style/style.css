@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Major+Mono+Display&family=Noto+Sans+JP:wght@300&family=Ubuntu&family=Work+Sans&display=swap");
 body {
-  background-color: rgb(88, 194, 255);
+  background-color: rgb(111, 185, 255);
   margin: 0px 0px 0px 0px;
   display: flex;
   flex-flow: column;
@@ -47,6 +47,7 @@ body {
 }
 .logreg-btn:hover {
   background-color: rgb(104, 145, 42);
+  cursor: pointer;
 }
 .back {
   color: black;
